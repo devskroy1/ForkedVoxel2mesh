@@ -48,7 +48,9 @@ def load_config(exp_id):
 
     ''' Dataset '''
     # input should be cubic. Otherwise, input should be padded accordingly.
-    cfg.patch_shape = (64, 64, 64)
+    #cfg.patch_shape = (64, 64, 64)
+    #TOOO: Input needs padding as not cubic
+    cfg.patch_shape = (290, 290, 203)
 
     cfg.ndims = 3
     cfg.augmentation_shift_range = 10

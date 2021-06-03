@@ -3,7 +3,8 @@ rasterize_cuda = load(
     'rasterize_cuda', ['./utils/rasterize/rasterize_cuda.cpp', './utils/rasterize/rasterize_cuda_kernel.cu'], verbose=True)
 # rasterize_cuda = load(
 #     'rasterize_cuda', ['./utils/rasterize/rasterize_cuda.cpp', './utils/rasterize/dst_tf_cuda_kernel.cu'], verbose=True)
-
+# print("rasterize_cuda Python module")
+# print(rasterize_cuda)
 
 import math
 from torch import nn
